@@ -1,8 +1,9 @@
 body {
+    margin: 0;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background: #1e1e2f;
     font-family: Arial, sans-serif;
 }
@@ -26,6 +27,7 @@ body {
     border-radius: 8px;
     outline: none;
     background: #fff;
+    box-sizing: border-box;
 }
 
 .buttons {
