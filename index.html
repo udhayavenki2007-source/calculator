@@ -1,45 +1,43 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
 <body>
-    <img src="Screenshot 2026-04-10 134900.png" alt="Calculator Screenshot" width="100%">
+  <div class="container">
 
-<div class="calculator">
-    <input type="text" id="display" readonly>
+    <!-- Demo Screenshot -->
+    <div class="demo-box">
+      <h2>Demo Screenshot</h2>
+      <img src="calculator.jpeg" alt="Calculator Demo Screenshot" class="demo-img">
+    </div>
 
-    <div class="buttons">
+    <!-- Real Calculator -->
+    <div class="calculator">
+      <input type="text" id="display" disabled>
+
+      <div class="buttons">
         <button onclick="clearDisplay()">C</button>
         <button onclick="deleteLast()">⌫</button>
-        <button onclick="appendVal('/')">/</button>
-        <button onclick="appendVal('*')">×</button>
+        <button onclick="appendValue('/')">/</button>
+        <button onclick="appendValue('*')">×</button>
 
-        <button onclick="appendVal('7')">7</button>
-        <button onclick="appendVal('8')">8</button>
-        <button onclick="appendVal('9')">9</button>
-        <button onclick="appendVal('-')">-</button>
+        <button onclick="appendValue('7')">7</button>
+        <button onclick="appendValue('8')">8</button>
+        <button onclick="appendValue('9')">9</button>
+        <button onclick="appendValue('-')">-</button>
 
-        <button onclick="appendVal('4')">4</button>
-        <button onclick="appendVal('5')">5</button>
-        <button onclick="appendVal('6')">6</button>
-        <button onclick="appendVal('+')">+</button>
+        <button onclick="appendValue('4')">4</button>
+        <button onclick="appendValue('5')">5</button>
+        <button onclick="appendValue('6')">6</button>
+        <button onclick="appendValue('+')">+</button>
 
-        <button onclick="appendVal('1')">1</button>
-        <button onclick="appendVal('2')">2</button>
-        <button onclick="appendVal('3')">3</button>
+        <button onclick="appendValue('1')">1</button>
+        <button onclick="appendValue('2')">2</button>
+        <button onclick="appendValue('3')">3</button>
         <button onclick="calculate()">=</button>
 
-        <button onclick="appendVal('0')" class="zero">0</button>
-        <button onclick="appendVal('.')">.</button>
+        <button class="zero" onclick="appendValue('0')">0</button>
+        <button onclick="appendValue('.')">.</button>
+      </div>
     </div>
-</div>
 
-<script src="script.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
-</html>
-
-
-html codeode
